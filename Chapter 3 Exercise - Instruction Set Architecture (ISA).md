@@ -66,11 +66,11 @@ Little endian
 
 9. จากมุมมองของคอมไพเลอร์ สถาปัตยกรรมชุดคำสั่งที่ดี ควรมีคุณสมบัติอย่างไร
 
-1. Compatible
-2. Generality / Completeness
-3. Orthogonal
-4. Ease of Compilation
-5. Ease of Implementation
+   1. Compatible
+   2. Generality / Completeness
+   3. Orthogonal
+   4. Ease of Compilation
+   5. Ease of Implementation
 
 
 10. จงแสดงการจัดเรียงข้อมูลตามลำดับการจองตัวแปรดังกล่าวในภาษาซี ลงในหน่วยความจำที่มีการบังคับ restricted alignment
