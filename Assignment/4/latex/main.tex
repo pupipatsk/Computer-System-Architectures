@@ -111,22 +111,44 @@ Lastly, important concepts from this article will also appear in the final exam.
 
     \textbf{Answer:}
 
-    \textbf{Explain what systolic arrays are.}
+    \textbf{Explain what systolic arrays are.}\\
+    Systolic arrays are specialized hardware architectures designed to perform parallel computations efficiently. They consist of a network of processing elements (PEs) connected in a regular grid, where data flows synchronously between PEs in a rhythmic, "systolic" manner (similar to a heartbeat). Each PE performs a specific operation and passes the result to its neighbor.
+    \begin{figure}[h]
+        \includegraphics[width=5cm]{55-Systolic-array-architecture.png}
+        \centering
+    \end{figure}
 
-    \textbf{How are systolic arrays different from typical SIMD architectures?}
+    \textbf{How are systolic arrays different from typical SIMD architectures?}\\
+    Systolic arrays move data rhythmically through synchronized processing elements (PEs), ideal for structured tasks like matrix operations, with direct PE-to-PE communication. SIMD architectures broadcast a single instruction to all units, excelling in data-parallel tasks like image processing, using memory or buses for communication. Each is suited to different computational needs.
 
-    \textbf{When were they first created? }
+    \newpage
 
-    Sources: In the references section.
+    \textbf{When were they first created? }\\
+    Systolic arrays were first conceptualized by H.T. Kung and Charles E. Leiserson in the late 1970s. The concept was formally introduced in their 1979 paper, "Algorithms for VLSI Processor Arrays."
+
+    (Sources: In the references section.)
 
     \item Explain the similarities and differences between Agile software development and Agile hardware development.
+
+    \textbf{Answer:}
+    \begin{enumerate}
+        \item \textbf{Similarities}: Both Agile software and hardware development focus on iterative cycles, collaboration, flexibility, prototyping, and delivering incremental improvements.
+
+        \item \textbf{Differences}: Software iterations are faster and cheaper, with virtual testing and easy post-deployment updates. Hardware involves slower cycles, higher costs, physical prototyping, and limited flexibility after production.
+
+        \item \textbf{Conclusion}: Agile principles apply to both, but hardware faces more constraints due to its physical nature.
+    \end{enumerate}
+
 \end{enumerate}
 
 \subsection*{References}
 
 \begin{enumerate}
-    \item \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/} \sloppy
+    \sloppy
+    \item \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/}
+    \item \url{https://www.sciencedirect.com/topics/computer-science/systolic-arrays}
     \item \url{https://en.wikipedia.org/wiki/Systolic_array}
+    \item \url{https://www.researchgate.net/figure/55-Systolic-array-architecture_fig3_343586463}
     \item \url{https://en.wikipedia.org/wiki/Flynn%27s_taxonomy}
     \item \url{https://en.wikipedia.org/wiki/Dennard_scaling}
     \item \url{https://en.wikipedia.org/wiki/Itanium}
